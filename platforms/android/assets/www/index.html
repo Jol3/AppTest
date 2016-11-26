@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/jquery-mobile-1.4.5.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/index.js"> </script>
+    <style type="text/css">
+        <style>.ui-bar-f {
+            color: red;
+            background-color: yellow;
+
+        }
+
+        .ui-body-f {
+            font-weight: bold;
+            color: white;
+            background-color: purple;
+        }
+        h1,h2
+        {
+          font-size: 10px;
+        }
+        .ui-page-theme-f {
+            font-weight: bold;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Abre Menu tab1-->
+    <div data-role="page" id="pageone">
+        <div data-role="header" class="ui-page-theme-f">
+            <h1>Test de Personalidad</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home">Bienvenido</a></li>
+                    <li><a href="#pagetwo" data-icon="grid">Test</a></li>
+                    <li><a href="#myPanel" data-icon="info">Acerca de..</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview">
+                <li>
+                  <a href="#frase1" data-rel="popup" data-transition="turn">
+                    <img src="img/Apps-Mail.png" alt="" >
+                    <h2>Los sabios son los que buscan sabiduria, los necios piensan ya haberla encontrado.</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="#frase2" data-rel="popup" data-transition="turn">
+                    <img src="img/Apps-Mail.png" alt="">
+                    <h2>Vive como si fueses a morir mañana. Aprende como si fueses a vivir siempre.</h2>
+                    </a>
+                </li>
+                <li>
+                  <a href="#frase3" data-rel="popup" data-transition="turn">
+                    <img src="img/Apps-Mail.png" alt="">
+                    <h2>El genio se hace con un 1% de talento y un 99% de trabajo.</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="#frase4" data-rel="popup" data-transition="turn">
+                    <img src="img/Apps-Mail.png" alt="">
+                    <h2>Solo aquellos que se atreven a tener grandes fracasos terminan consiguiendo grandes éxitos.</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="#frase5" data-rel="popup" data-transition="turn">
+                    <img src="img/Apps-Mail.png" alt="">
+                    <h2>Si piensas que puedes o piensas que puedes, ¡Tienes la razón!</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="#frase6" data-rel="popup" data-transition="turn">
+                    <img src="img/Apps-Mail.png" alt="">
+                    <h2>La falta de voluntad ha causado más fracasos que la falta de inteligencia y habilidad.</h2>
+                  </a>
+                </li>
+            </ul>
+
+            <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="frase1" data-dismissible="true" style="max-width: 100%;  height:100%;">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="main" class="ui-content">
+                    <h2>Los sabios son los que buscan sabiduria, los necios piensan ya haberla encontrado.</h2>
+                </div>
+
+            </div>
+            <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="frase2" data-dismissible="true" style="max-width: 100%;  height:100%;">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="main" class="ui-content">
+                      <h2>Vive como si fueses a morir mañana. Aprende como si fueses a vivir siempre.</h2>
+                </div>
+
+            </div>
+            <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="frase3" data-dismissible="true" style="max-width: 100%;  height:100%;">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="main" class="ui-content">
+                  <h2>El genio se hace con un 1% de talento y un 99% de trabajo.</h2>
+                </div>
+
+            </div>
+            <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="frase4" data-dismissible="true" style="max-width: 100%;  height:100%;">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="main" class="ui-content">
+                  <h2>Solo aquellos que se atreven a tener grandes fracasos terminan consiguiendo grandes éxitos.</h2>
+                </div>
+
+            </div>
+            <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="frase5" data-dismissible="true" style="max-width: 100%;  height:100%;">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="main" class="ui-content">
+                  <h2>Si piensas que puedes o piensas que puedes, ¡Tienes la razón!.</h2>
+                </div>
+
+            </div>
+            <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="frase6" data-dismissible="true" style="max-width: 100%;  height:100%;">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="main" class="ui-content">
+                      <h2>La falta de voluntad ha causado más fracasos que la falta de inteligencia y habilidad.</h2>
+                </div>
+
+            </div>
+        </div>
+        <div data-role="panel" id="myPanel" style="height:100%;" data-theme="b">
+            <div>
+                <div data-role="header">
+                    <h6 style="font-size: 10px;">Desarrolladores</h6>
+                </div>
+                <div data-role="main" class="ui-content">
+                    <ul data-role="listview">
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilJoel" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Limbo.png" alt="">
+                                <h2>Joel Martinez</h2>
+                                <p>Estudiante ISC</p>
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilMon" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Android-Studio.png" alt="">
+                                <h2>M. Monsivais</h2>
+                                <p>Estudiante ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilLiz" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Android-File-Transfer.png" alt="">
+                                <h2>Liceydi Chavez</h2>
+                                <p>Estudiante ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilYair" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Scrivener.png" alt="">
+                                <h2>Yair Contreras</h2>
+                                <p>Estudiante ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilProf" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Iterm.png" alt="">
+                                <h2>Mtra.Perla Ivet</h2>
+                                <p>Docente ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                    </ul>
+
+                </div>
+                <div data-role="footer">
+                    <h6 style="font-size: 10px;">#Sistemas</h6>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" style="text-align:center;">
+            <a href="#"><img src="img/fa.png" alt=""></a>
+            <a href="#"><img src="img/tw.png" alt=""></a>
+            <a href="#"><img src="img/git.png" alt=""></a>
+        </div>
+
+    </div>
+    <!-- cierra Menu tab1-->
+
+
+
+
+    <!-- Abre Menu tab2-->
+    <div data-role="page" id="pagetwo">
+        <div data-role="header">
+            <h1>Test de Personalidad</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#pageone" data-icon="home">Home</a></li>
+                    <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="grid">Test</a></li>
+                    <li><a href="#myPanel" data-icon="info">Acerca de</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li>
+                        <a href="#respuestas1" data-rel="popup" data-transition="turn">
+                            <img src="img/familia.png" alt="">
+                            <h2>1. Familia</h2>
+                            <p>descripcion de la categoria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#respuestas2" data-rel="popup" data-transition="turn">
+                            <img src="img/amigos.png" alt="">
+                            <h2>2. Amigos</h2>
+                            <p>descripcion de la categoria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#respuestas3" data-rel="popup" data-transition="turn">
+                            <img src="img/sociedad.png" alt="">
+                            <h2>3. Sociedad</h2>
+                            <p>descripcion de la categoria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#respuestas4" data-rel="popup" data-transition="turn">
+                            <img src="img/escuela.png" alt="">
+                            <h2>4. Escuela</h2>
+                            <p>descripcion de la categoria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#respuestas5" data-rel="popup" data-transition="turn">
+                            <img src="img/hobbies.png" alt="">
+                            <h2>5. Hobbies</h2>
+                            <p>descripcion de la categoria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#respuestas6" data-rel="popup" data-transition="turn">
+                            <img src="img/amor.png" alt="">
+                            <h2>6. Amor</h2>
+                            <p>descripcion de la categoria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#respuestas7" data-rel="popup" data-transition="turn">
+                            <img src="img/creatividad.png" alt="">
+                            <h2>7. Creatividad</h2>
+                            <p>descripcion de la categoria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resultado" data-rel="popup" data-transition="turn" class="ui-btn ui-shadow ui-shadow" onclick="resultado()">Evaluar Test</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div data-role="footer" style="text-align:center;">
+            <a href="#"><img src="img/fa.png" alt=""></a>
+            <a href="#"><img src="img/tw.png" alt=""></a>
+            <a href="#"><img src="img/git.png" alt=""></a>
+        </div>
+
+        <div data-role="panel" id="myPanel" style="height:100%;" data-theme="b">
+            <div>
+                <div data-role="header">
+                    <h6 style="font-size: 10px;">Desarrolladores</h6>
+                </div>
+
+                <div data-role="main" class="ui-content">
+                    <ul data-role="listview">
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilJoel" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Limbo.png" alt="">
+                                <h2>Joel Martinez</h2>
+                                <p>Estudiante ISC</p>
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilMon" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Android-Studio.png" alt="">
+                                <h2>M. Monsivais</h2>
+                                <p>Estudiante ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilLiz" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Android-File-Transfer.png" alt="">
+                                <h2>Liceydi Chavez</h2>
+                                <p>Estudiante ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilYair" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Scrivener.png" alt="">
+                                <h2>Yair Contreras</h2>
+                                <p>Estudiante ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                        <li>
+                            <a href="#perfilProf" data-rel="popup" data-transition="turn">
+                                <img src="img/Apps-Iterm.png" alt="">
+                                <h2>Mtra.Perla Ivet</h2>
+                                <p>Docente ISC</p>
+
+                            </a>
+                        </li>
+                        <li data-role="list-divider"></li>
+                    </ul>
+                </div>
+
+                <div data-role="footer">
+                    <h6 style="font-size: 10px;">#Sistemas</h6>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- abre pops de los perfiles -->
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="perfilJoel" data-dismissible="true" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">datos Personales</h1>
+            </div>
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li>
+                        <h2>Joel Martínez Flores</h2></li>
+                    <li>
+                        <h2>Edad: 21 años</h2></li>
+                    <li>
+                        <h2>Estudiante de ISC</h2></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h1>#Sistemas</h1>
+            </div>
+        </div>
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="perfilMon" data-dismissible="true" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">datos Personales</h1>
+            </div>
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li>
+                        <h2>Miguel Monsivaís Barron</h2></li>
+                    <li>
+                        <h2>Edad: 24 años</h2></li>
+                    <li>
+                        <h2>Estudiante de ISC</h2></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h1>#Sistemas</h1>
+            </div>
+        </div>
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="perfilLiz" data-dismissible="true" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">datos Personales</h1>
+            </div>
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li>
+                        <h2>Liceydi Chavez Vargas</h2></li>
+                     <li>
+                        <h2>Edad: 21 años</h2>
+                     </li>
+                     <li>
+                        <h2>Estudiante de ISC</h2></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h1>#Sistemas</h1>
+            </div>
+        </div>
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="perfilYair" data-dismissible="true" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">datos Personales</h1>
+            </div>
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li>
+                        <h2>Yair Contreras Angeles</h2></li>
+                    <li>
+                        <h2>Edad: 21 años</h2></li>
+                    <li>
+                        <h2>Estudiante de ISC</h2></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h1>#Sistemas</h1>
+            </div>
+        </div>
+
+
+        <!-- cierra pops de los perfiles -->
+
+        <!-- abre pops de las respuestas -->
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="respuestas1" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 >Familia</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h2 >Tomas la iniciativa <br>para realizar reuniones.</h2>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="respFamilia" id="resFamAcuerdo" value="on"  onclick="validar('respFamilia')">
+                        <label for="resFamAcuerdo" >De acuerdo</label>
+                        <input type="radio" name="respFamilia" id="resFamDesacuerdo" value="off" onclick="validar('respFamilia')">
+                        <label for="resFamDesacuerdo">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Cuando estas con tu familia te <br>sientes relajado.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="respFamilia2" id="resFamAcuerdo2" value="on" onclick="validar('respFamilia2')">
+                        <label for="resFamAcuerdo2">De acuerdo</label>
+                        <input type="radio" name="respFamilia2" id="resFamDesacuerdo2" value="off" onclick="validar('respFamilia2')">
+                        <label for="resFamDesacuerdo2">Desacuerdo</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left ui-btn-b " data-rel="back">Confirmar Respuestas?</a>
+            </div>
+        </div>
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="respuestas2" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">Amigos</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1 style="font-size: 10px;">Te preocupa cómo afectan tus <br>acciones hacia las demás personas.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="Amigos" id="resAmigAcuerdo" value="on" onclick="validar('Amigos')">
+                        <label for="resAmigAcuerdo">De acuerdo</label>
+                        <input type="radio" name="Amigos" id="resAmigDesacuerdo" value="off" onclick="validar('Amigos')">
+                        <label for="resAmigDesacuerdo">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Nunca sientes envidia de <br>las demás  personas.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="Amigos2" id="resAmigAcuerdo2" value="on"  onclick="validar('Amigos2')">
+                        <label for="resAmigAcuerdo2">De acuerdo</label>
+                        <input type="radio" name="Amigos2" id="resAmigDesacuerdo2" value="off" onclick="validar('Amigos2')">
+                        <label for="resAmigDesacuerdo2">Desacuerdo</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left ui-btn-b " data-rel="back">Confirmar Respuestas?</a>
+            </div>
+        </div>
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="respuestas3" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">Sociedad</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1>No te cuesta trabajo <br>presentarte ante  <br>los demás</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="sociedad" id="resSocAcuerdo" value="on"  onclick="validar('sociedad')">
+                        <label for="resSocAcuerdo">De acuerdo</label>
+                        <input type="radio" name="sociedad" id="resSocDesacuerdo" value="off" onclick="validar('sociedad')">
+                        <label for="resSocDesacuerdo">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Apoyas a los demás cuando lo <br>necesitan.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="sociedad2" id="resSocAcuerdo2" value="on"  onclick="validar('sociedad2')">
+                        <label for="resSocAcuerdo2">De acuerdo</label>
+                        <input type="radio" name="sociedad2" id="resSocDesacuerdo2" value="off" onclick="validar('sociedad2')">
+                        <label for="resSocDesacuerdo2">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>No te sientes superior a otras <br>personas.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="sociedad3" id="resSocAcuerdo3" value="on" onclick="validar('sociedad3')">
+                        <label for="resSocAcuerdo3">De acuerdo</label>
+                        <input type="radio" name="sociedad3" id="resSocDesacuerdo3" value="off" onclick="validar('sociedad3')">
+                        <label for="resSocDesacuerdo3">Desacuerdo</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left ui-btn-b " data-rel="back">Confirmar Respuestas?</a>
+            </div>
+        </div>
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="respuestas4" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">Escuela</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1>Normalmente te sientes <br>motivado para <br>asistir a la escuela.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="escuela" id="resEscAcuerdo" value="on"  onclick="validar('escuela')">
+                        <label for="resEscAcuerdo">De acuerdo</label>
+                        <input type="radio" name="escuela" id="resEscDesacuerdo" value="off" onclick="validar('escuela')">
+                        <label for="resEscDesacuerdo">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Tu objetivo es terminar una <br>carrera.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="escuela2" id="resEscAcuerdo2" value="on"  onclick="validar('escuela2')">
+                        <label for="resEscAcuerdo2">De acuerdo</label>
+                        <input type="radio" name="escuela2" id="resEscDesacuerdo2" value="off" onclick="validar('escuela2')">
+                        <label for="resEscDesacuerdo2">Desacuerdo</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left ui-btn-b " data-rel="back">Confirmar Respuestas?</a>
+            </div>
+        </div>
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="respuestas5" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">Hobbies</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1>Te gusta realizar algún <br>deporte.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="hobbie" id="resHobAcuerdo" value="on"  onclick="validar('hobbie')">
+                        <label for="resHobAcuerdo">De acuerdo</label>
+                        <input type="radio" name="hobbie" id="resHobDesacuerdo" value="off" onclick="validar('hobbie')">
+                        <label for="resHobDesacuerdo">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Asistes al gimnasio <br> regularmente.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="hobbie2" id="resHobAcuerdo2" value="on" onclick="validar('hobbie2')">
+                        <label for="resHobAcuerdo2">De acuerdo</label>
+                        <input type="radio" name="hobbie2" id="resHobDesacuerdo2" value="off" onclick="validar('hobbie2')">
+                        <label for="resHobDesacuerdo2">Desacuerdo</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left ui-btn-b " data-rel="back">Confirmar Respuestas?</a>
+            </div>
+        </div>
+
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="respuestas6" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">Amor</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1>Es fácil entender los <br>sentimientos de <br>una persona.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="amor" id="resAmorAcuerdo" value="on"  onclick="validar('amor')">
+                        <label for="resAmorAcuerdo">De acuerdo</label>
+                        <input type="radio" name="amor" id="resAmorDesacuerdo" value="off" onclick="validar('amor')">
+                        <label for="resAmorDesacuerdo">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Te sientes seguro de <br>ti mismo.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="amor2" id="resAmorAcuerdo2" value="on"  onclick="validar('amor2')">
+                        <label for="resAmorAcuerdo2">De acuerdo</label>
+                        <input type="radio" name="amor2" id="resAmorDesacuerdo2" value="off" onclick="validar('amor2')">
+                        <label for="resAmorDesacuerdo2">Desacuerdo</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left ui-btn-b " data-rel="back">Confirmar Respuestas?</a>
+            </div>
+        </div>
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="respuestas7" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">Creatividad</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1>Te gusta hacer manualidades.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="creat" id="resCreatAcuerdo" value="on"  onclick="validar('creat')">
+                        <label for="resCreatAcuerdo">De acuerdo</label>
+                        <input type="radio" name="creat" id="resCreatDesacuerdo" value="off" onclick="validar('creat')">
+                        <label for="resCreatDesacuerdo">Desacuerdo</label>
+                    </fieldset>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Dibujar es lo que más <br>disfrutas.</h1>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" name="creat2" id="resCreatAcuerdo2" value="on"  onclick="validar('creat2')">
+                        <label for="resCreatAcuerdo2">De acuerdo</label>
+                        <input type="radio" name="creat2" id="resCreatDesacuerdo2" value="off" onclick="validar('creat2')">
+                        <label for="resCreatDesacuerdo2">Desacuerdo</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-alert ui-btn-icon-left ui-btn-b " data-rel="back">Confirmar Respuestas?</a>
+            </div>
+        </div>
+
+        <!--cierra pops de las respuestas -->
+
+
+
+
+
+
+        <!-- Mensaje pop de resultado-->
+        <div data-overlay-theme="b" data-position-to="window" data-role="popup" id="resultado" data-dismissible="false" style="max-width: 100%;  height:100%;">
+            <div data-role="header">
+                <h1 style="font-size: 15px;">Resultados</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+
+                <h2 id="resultadoValor">Tu resultado es: </h2>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left ui-btn-b " data-rel="back">Aceptar</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Cierra Menu tab2-->
+
+
+</body>
+
+</html>
